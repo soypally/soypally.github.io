@@ -1,26 +1,52 @@
-.image-fondo {
-    background-image: url("../img/background.jpg");
-    background-size: cover;
+@font-face {
+  font-family: 'Italianno';
+  src: url(../font/Italianno-Regular.ttf);
 }
-.cabecera{
-  color: #fff;
-  height: 200px;
-  line-height: 200px;
-  text-align: center;
-  vertical-align: middle;
-  text-shadow: #111 0px 0px 10px;
+
+@font-face {
+  font-family: 'Italianno';
+  src: url(../font/Italianno-Regular.ttf);
 }
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url(../font/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url(../font/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url(../font/Roboto-Light.ttf);
+}
+
 
 body {
   height: 400px;
   background-image: url("../img/background.jpg");
-background-size: cover;
-  background-repeat:no-repeat;
+  background-size: cover;
+  background-repeat:repeat;
   background-position: center center;
   background-attachment: fixed;
+  font-size: 80%;
 }
 
 h1 {
   font-family: 'Italianno', cursive;
+  font-size: 3.5em;   /* 2em = 2 x 10px = 20px */
   text-align: center;
+}
+
+h2 {
+  font-family:'Roboto-Bold', sans-serif;
+  text-align: center;
+  font-size: 1.6em; /* 1.4em x 10px = 14px */
+}
+
+p {
+  font-family: 'Roboto-Light';
+  text-align:justify;
+  font-size: 1.4em; /* 1.4em x 10px = 14px */
 }
