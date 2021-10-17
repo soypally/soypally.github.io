@@ -14,7 +14,7 @@
 body {
   height: 400px;
   background-image: url("../img/background.jpg");
-background-size: cover;
+  background-size: cover;
   background-repeat:no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -23,4 +23,38 @@ background-size: cover;
 h1 {
   font-family: 'Italianno', cursive;
   text-align: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  font-family: Helvetica;
+  width: 100%;
+  margin: 0 auto;
+}
+iframe{
+  height: 15em;
+  width: 25em;
+  border: 0.1em solid #000;
+}
+ul{
+  list-style: none;
+}
+#menu li>a{
+  background-color: #8d6e63;
+  color: white;
+  font-size: 1em;
+  padding: 0.5em;
+  display: block;
+  text-decoration: none;
+  min-width: 75%;
+}
+#menu li>a:hover{
+  color: black;
+  background-color: #d7ccc8 ;
+}
+#menu>li{
+  float: left;
+  text-align:center
 }
