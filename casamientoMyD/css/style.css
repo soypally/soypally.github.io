@@ -35,7 +35,7 @@
 }
 
 body {
-  height: 400px;
+  margin:0.5em;
   background-image: url("../img/background.jpg");
   background-size: cover;
 
@@ -56,11 +56,13 @@ h2 {
   font-family:'Roboto-Bold', sans-serif;
   text-align: center;
   font-size: 1.6em; /* 1.4em x 10px = 14px */
+  line-height: 1.7em;
 }
 
 p {
   font-family: 'Roboto-Light';
   text-align:justify;
+  line-height: 1.45em;
   font-size: 1.4em; /* 1.4em x 10px = 14px */
 }
 
@@ -68,10 +70,17 @@ p {
   max-width: 100%;
   height: auto;
 }
+
+.logo-insta {
+  max-width: 1.5em; 
+  height: 1.5em;
+}
+
 *{
   margin: 0;
   padding: 0;
 }
+
 header{
   font-family: Helvetica;
   width: 100%;
