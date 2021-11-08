@@ -8,6 +8,10 @@
   src: url(../font/Italianno-Regular.ttf);
 }
 @font-face {
+  font-family:'Brotherhood';
+  src: url(../font/Brotherhood_Script.ttf);
+}
+@font-face {
   font-family: 'Roboto-Regular';
   src: url(../font/Roboto-Regular.ttf);
 }
@@ -15,6 +19,16 @@
 @font-face {
   font-family: 'Roboto-Bold';
   src: url(../font/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Baskerville-Regular';
+  src: url(../font/LibreBaskerville-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Baskerville-Bold';
+  src: url(../font/LibreBaskerville-Bold.ttf);
 }
 
 @font-face {
@@ -47,13 +61,13 @@ body {
 }
 
 h1 {
-  font-family: 'Italianno', cursive;
-  font-size: 3.5em;   /* 2em = 2 x 10px = 20px */
+  font-family: 'Brotherhood';
+  font-size: 4.5em;   /* 2em = 2 x 10px = 20px */
   text-align: center;
 }
 
 h2 {
-  font-family:'Roboto-Bold', sans-serif;
+  font-family:'Baskerville-Bold', sans-serif;
   text-align: center;
   font-size: 1.6em; /* 1.4em x 10px = 14px */
   line-height: 1.7em;
