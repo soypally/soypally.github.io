@@ -73,6 +73,13 @@ h2 {
   line-height: 1.7em;
 }
 
+figcaption{
+  font-family: 'Roboto-Light';
+  text-align:justify;
+  line-height: 0.75em;
+  font-size: 0.7em; /* 1.4em x 10px = 14px */  
+}
+
 p {
   font-family: 'Roboto-Light';
   text-align:justify;
