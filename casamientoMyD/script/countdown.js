@@ -15,12 +15,19 @@ const getRemainTime = deadline =>{
     }
 }
 
-const countdown = (deadline, elem, finalMessage) =>{
-    const el = document.getElementById(elem);
-
+const countdown = (deadline, days, hours, minutes, seconds, finalMessage) =>{
+    const dayEl = document.getElementById(days);
+    const hoursEl = document.getElementById(hours);
+    const minutesEl = document.getElementById(minutes);
+    const secondsEl = document.getElementById(seconds);
+    
     const timerUpdate = setInterval( () =>{
         let t = getRemainTime(deadline);
-        el.innerHTML =  `${t.remainDays}d:${t.remainHours}h:${t.remainMinutes}m:${t.remainSeconds}:s`;
+        dayEl.innerHTML =`${t.remainDays}`;
+        hoursEl.innerHTML =`${t.remainHours}`;
+        minutesEl.innerHTML = `${t.remainMinutes}`;
+        secondsEl.innerHTML = `${t.remainSeconds}`;
+        //el.innerHTML =  `${t.remainDays}d:${t.remainHours}h:${t.remainMinutes}m:${t.remainSeconds}:s`;
         if (t.remainTime <=1){
             clearInterval(timerUpdate);
             el.innerHTML = finalMessage;
@@ -30,4 +37,4 @@ const countdown = (deadline, elem, finalMessage) =>{
 };
 
 //console.log(getRemainTime('Nov 20 2021 01:42:44 GMT-0300'))
-countdown('Jan 15 2022 11:30:00 GMT-0300','clock','Llego el gran Dia!!')
+countdown('Jan 15 2022 11:30:00 GMT-0300','days','hours','minutes','seconds','Llego el gran Dia!!')
